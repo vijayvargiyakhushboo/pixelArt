@@ -4,7 +4,7 @@
     <title>Pixel Art Maker!</title>
     <link rel="icon" href="http://etc.usf.edu/clipart/2500/2514/p_9_sm.gif" type="gif" sizes="16x16 32x32">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Algerian">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton"> -->
        <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -12,21 +12,24 @@ crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+   <div id ="divPicker">
     <h1>Lab: Pixel Art Maker</h1>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1" max="20">
-        Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" value="1" max="20">
+     </div>
+     <form id="sizePicker">
+        <h2>Choose Grid Size</h2>
+        <b>Grid Height:</b>
+        <input type="number" id="inputHeight" name="height" min="1" value="16" max="20">
+        <b>Grid Width:</b>
+        <input type="number" id="inputWeight" name="width" min="1" value="16" max="20">
         <input type="submit" id="submit">
-    </form>
+    
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker" value="#7DF481">
 
     <h2>Design Canvas</h2>
+    </form>
     <table id="pixelCanvas" style="background-image: udacity.jpg"></table>
 
     <script src="designs.js"></script>

@@ -18,19 +18,12 @@ var i=1;
   event.preventDefault();
     });
 
-$('#pixelCanvas').on('click','.pixel',function(){  
+$('#pixelCanvas').on('mouseover','.pixel',function(){  
   var pen=$('#colorPicker').val();
   $(this).css('background-color',pen);
-  $('td').toggleClass('grid_Toggle');
   //var h1 =$('body').find('h1').css('background-color',pen);
 });
 
-// Toggle the grid after creating the pixel art
-$('#toggleBtn').click('#pixelCanvas',function (){
-  console.log("kv");
-    $('td').toggleClass('grid_Toggle');
-});
-
-
 
 });
+

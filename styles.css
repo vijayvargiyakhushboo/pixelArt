@@ -6,20 +6,23 @@ h1 {
     font-family: Algerian;
     font-size: 70px;
     margin: 0.2em;
+    color: red;
 }
 
 h2 {
     margin: 1em 0 0.25em;
+
 }
 
 h2:first-of-type {
     margin-top: 0.5em;
+    color: red;
 }
 
 table,
 tr,
 td {
-    border: 1px solid black;
+    border: 1px solid red;
 }
 
 table {
@@ -28,13 +31,23 @@ table {
 }
 
 tr {
-    height: 20px;
+    height: 40px;
 }
 
 td {
-    width: 20px;
+    width: 40px;
 }
 
 input[type=number] {
     width: 6em;
+}
+#divPicker {
+    background-image: url('images.png');
+}
+#sizePicker {
+    /* background-image: url('panda.png'); */
+    width: auto;
+    height: auto;
+    align-items: center;
+
 }
